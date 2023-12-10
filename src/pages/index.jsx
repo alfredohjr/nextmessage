@@ -8,20 +8,6 @@ export default function Main() {
     )
 }
 
-
-const PartI = () => {
-    return (
-        <div className="w-full p-2 h-screen">
-            <div className="w-1/2 h-full"></div>
-            <div className="w-1/2 h-full">
-                <div
-                    className="text-4xl font-bold text-center"
-                >Hello! I'am Alfredo</div>
-            </div>
-        </div>
-    )
-}
-
 const ContactUs = () => {
 
     async function handleSubmit(event) {
