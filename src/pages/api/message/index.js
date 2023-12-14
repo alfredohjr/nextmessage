@@ -13,13 +13,13 @@ export default async function handler(req, res) {
 
     if (req.method === 'POST') {
         
-        const { message } = await req.body;
-        console.log(message);
+        const { name, email, message } = await req.body;
+        console.log(message, name, email);
 
         const info = await transporter.sendMail({
             from: `"${process.env.APP_NAME}" <${process.env.EMAIL_USERNAME}>`,
             to: process.env.EMAIL_USERNAME,
-            subject: `Message from [${process.env.APP_NAME}]`,
+            subject: `Message from [${process.env.APP_NAME}]<${name} - ${email}>`,
             html: `${message}`,
           });
 
