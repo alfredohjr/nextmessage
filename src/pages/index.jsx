@@ -64,11 +64,11 @@ const ContactUs = () => {
                     <h2>Message</h2>
                     <small>This is a message from the main page.</small>
                     <form onSubmit={handleSubmit} className="">
-                        <div className="my-2 flex">
-                            <div className="w-2/12 text-right pr-2">
+                        <div className="my-2 block md:flex">
+                            <div className="md:w-2/12 text-center md:text-right pr-2">
                                 <label htmlFor="name" className="h-full align-middle">Name:</label>
                             </div>
-                            <div className="w-10/12">
+                            <div className="md:w-10/12">
                                 <input
                                     type="text"
                                     name="name"
@@ -77,11 +77,11 @@ const ContactUs = () => {
                             </div>
                         </div>
                         
-                        <div className="my-2 flex">
-                            <div className="w-2/12 text-right pr-2">
+                        <div className="my-2 block md:flex">
+                            <div className="md:w-2/12 text-center md:text-right pr-2">
                                 <label htmlFor="email" className="h-full align-middle">Email:</label>
                             </div>
-                            <div className="w-10/12">
+                            <div className="md:w-10/12">
                                 <input
                                     type="email"
                                     name="email"
@@ -90,11 +90,11 @@ const ContactUs = () => {
                             </div>
                         </div>
 
-                        <div className="my-2 flex">
-                            <div className="w-2/12 text-right pr-2">
+                        <div className="my-2 block md:flex">
+                            <div className="md:w-2/12 text-center md:text-right pr-2">
                                 <label htmlFor="message" className="h-full align-middle">Message:</label>
                             </div>
-                            <div className="w-10/12">
+                            <div className="md:w-10/12">
                                 <textarea 
                                     name="message" 
                                     id="" 

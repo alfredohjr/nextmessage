@@ -14,7 +14,6 @@ export default async function handler(req, res) {
     if (req.method === 'POST') {
         
         const { name, email, message } = await req.body;
-        console.log(message, name, email);
 
         const info = await transporter.sendMail({
             from: `"${process.env.APP_NAME}" <${process.env.EMAIL_USERNAME}>`,
